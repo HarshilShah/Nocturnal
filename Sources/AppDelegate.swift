@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  NightTime
+//  Nocturnal
 //
 //  Created by Harshil Shah on 25/09/18.
 //  Copyright © 2018 Harshil Shah. All rights reserved.
@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     private lazy var menu: NSMenu = {
         let menu = NSMenu()
-        menu.addItem(withTitle: "Quit NightTime",
+        menu.addItem(withTitle: "Quit",
                      action: #selector(NSApplication.terminate),
                      keyEquivalent: "q")
         return menu
