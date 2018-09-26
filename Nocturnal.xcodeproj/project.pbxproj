@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73DB7C4D215BCDBB00BDA644 /* SunriseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DB7C4C215BCDBB00BDA644 /* SunriseManager.swift */; };
+		73DB7C4F215BD61C00BDA644 /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DB7C4E215BD61C00BDA644 /* Solar.swift */; };
 		E833B418215B60CA009F9D55 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833B417215B60CA009F9D55 /* main.swift */; };
 		E8C02103215A6D0200E99E74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C02102215A6D0200E99E74 /* AppDelegate.swift */; };
 		E8C02107215A6D0300E99E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C02106215A6D0300E99E74 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73DB7C4C215BCDBB00BDA644 /* SunriseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseManager.swift; sourceTree = "<group>"; };
+		73DB7C4E215BD61C00BDA644 /* Solar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solar.swift; sourceTree = "<group>"; };
 		E833B417215B60CA009F9D55 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E8C020FF215A6D0200E99E74 /* Nocturnal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nocturnal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C02102215A6D0200E99E74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 				E8C02106215A6D0300E99E74 /* Assets.xcassets */,
 				E8C0210B215A6D0300E99E74 /* Info.plist */,
 				E8C0210C215A6D0300E99E74 /* Nocturnal.entitlements */,
+				73DB7C4C215BCDBB00BDA644 /* SunriseManager.swift */,
+				73DB7C4E215BD61C00BDA644 /* Solar.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -134,8 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DB7C4D215BCDBB00BDA644 /* SunriseManager.swift in Sources */,
 				E833B418215B60CA009F9D55 /* main.swift in Sources */,
 				E8C02103215A6D0200E99E74 /* AppDelegate.swift in Sources */,
+				73DB7C4F215BD61C00BDA644 /* Solar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +273,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = BM5Y87HJ2F;
+				DEVELOPMENT_TEAM = D9G4X7TP5Q;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -287,7 +295,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = BM5Y87HJ2F;
+				DEVELOPMENT_TEAM = D9G4X7TP5Q;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
