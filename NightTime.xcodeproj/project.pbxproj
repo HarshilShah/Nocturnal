@@ -7,18 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E833B418215B60CA009F9D55 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E833B417215B60CA009F9D55 /* main.swift */; };
 		E8C02103215A6D0200E99E74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C02102215A6D0200E99E74 /* AppDelegate.swift */; };
-		E8C02105215A6D0200E99E74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C02104215A6D0200E99E74 /* ViewController.swift */; };
 		E8C02107215A6D0300E99E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C02106215A6D0300E99E74 /* Assets.xcassets */; };
-		E8C0210A215A6D0300E99E74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C02108215A6D0300E99E74 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E833B417215B60CA009F9D55 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E8C020FF215A6D0200E99E74 /* NightTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C02102215A6D0200E99E74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8C02104215A6D0200E99E74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8C02106215A6D0300E99E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E8C02109215A6D0300E99E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8C0210B215A6D0300E99E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8C0210C215A6D0300E99E74 /* NightTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NightTime.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,10 +51,9 @@
 		E8C02101215A6D0200E99E74 /* NightTime */ = {
 			isa = PBXGroup;
 			children = (
+				E833B417215B60CA009F9D55 /* main.swift */,
 				E8C02102215A6D0200E99E74 /* AppDelegate.swift */,
-				E8C02104215A6D0200E99E74 /* ViewController.swift */,
 				E8C02106215A6D0300E99E74 /* Assets.xcassets */,
-				E8C02108215A6D0300E99E74 /* Main.storyboard */,
 				E8C0210B215A6D0300E99E74 /* Info.plist */,
 				E8C0210C215A6D0300E99E74 /* NightTime.entitlements */,
 			);
@@ -95,6 +92,11 @@
 				TargetAttributes = {
 					E8C020FE215A6D0200E99E74 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -122,7 +124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C02107215A6D0300E99E74 /* Assets.xcassets in Resources */,
-				E8C0210A215A6D0300E99E74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,23 +134,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8C02105215A6D0200E99E74 /* ViewController.swift in Sources */,
+				E833B418215B60CA009F9D55 /* main.swift in Sources */,
 				E8C02103215A6D0200E99E74 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E8C02108215A6D0300E99E74 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8C02109215A6D0300E99E74 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E8C0210D215A6D0300E99E74 /* Debug */ = {
@@ -272,6 +262,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NightTime/NightTime.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = BM5Y87HJ2F;
@@ -282,6 +273,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NightTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -291,6 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NightTime/NightTime.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = BM5Y87HJ2F;
@@ -301,6 +294,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NightTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
