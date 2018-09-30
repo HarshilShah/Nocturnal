@@ -15,7 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }()
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        statusItem.behavior = .terminationOnRemoval
+        statusItem.isVisible = true
+        statusItem.behavior = [.removalAllowed, .terminationOnRemoval]
         statusItem.button?.target = self
         statusItem.button?.action = #selector(itemWasClicked(_:))
         statusItem.button?.sendAction(on: [.leftMouseUp, .rightMouseUp])
@@ -30,7 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let script = """
         tell application "System Events"
             tell appearance preferences
-                set dark mode to not dark mode
+                set dark mode to not dark mode  
             end tell
         end tell
         """
