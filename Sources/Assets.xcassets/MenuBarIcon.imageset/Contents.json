@@ -18,7 +18,7 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "Sun.png",
+      "filename" : "sun 22px.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
@@ -45,7 +45,7 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "Sun@2x.png",
+      "filename" : "sun 50px.png",
       "appearances" : [
         {
           "appearance" : "luminosity",
