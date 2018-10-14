@@ -8,7 +8,11 @@ macOS 10.14 Mojave or later
 
 ## Installation
 
-Download the [latest release](https://github.com/HarshilShah/Nocturnal/releases/latest).
+You can download the [latest release](https://github.com/HarshilShah/Nocturnal/releases/latest) directly, or install via Homebrew Cask:
+
+```
+brew cask install nocturnal
+```
 
 ## Usage
 
