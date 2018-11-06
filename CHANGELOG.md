@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3 Release notes (6/11/2018)
+
+- Added a crossfade animation for the theme change
+
 ## 0.2.1 Release notes(30/09/2018)
 
 - Fixed a bug where the menubar icon would not be visible in some conditions
